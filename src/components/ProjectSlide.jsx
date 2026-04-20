@@ -1,18 +1,10 @@
 import { useScrollReveal } from '../hooks/useScrollReveal.js';
+import { STATUS_LABELS } from '../data/projects.js';
 
-const STATUS_COLORS = {
-  'הושלם':  'bg-[var(--color-gold)] text-[var(--color-navy-dark)]',
-  'בבנייה': 'bg-white/20 text-white border border-white/40',
-  'בתכנון': 'bg-white/10 text-white/80 border border-white/30',
-  'למכירה': 'bg-[var(--color-gold)] text-[var(--color-navy-dark)]',
-};
-
-// Full-bleed "after" photo with floating details card.
-export default function ProjectSlide({ project, index, total, onOpenGallery, eager = false }) {
+export default function ProjectSlide({ project, onOpenGallery, eager = false }) {
   const revealRef = useScrollReveal({ threshold: 0.35 });
-  const { name, location, units, year, status, description, hero } = project;
-
-  const statusClass = STATUS_COLORS[status] || 'bg-white/15 text-white border border-white/30';
+  const { name, location, units, sqm, status, description, goldenVisa, rented, mixedUse, hero, unitLabel } = project;
+  const unitsLabel = unitLabel || (units === 1 ? 'Unit' : 'Units');
 
   return (
     <section className="slide" data-slide={project.slug}>
@@ -23,7 +15,7 @@ export default function ProjectSlide({ project, index, total, onOpenGallery, eag
             src={hero[1280]}
             alt={`${name} — ${location}`}
             loading={eager ? 'eager' : 'lazy'}
-            fetchpriority={eager ? 'high' : 'auto'}
+            fetchPriority={eager ? 'high' : 'auto'}
             decoding="async"
           />
         </picture>
@@ -31,60 +23,58 @@ export default function ProjectSlide({ project, index, total, onOpenGallery, eag
       </div>
 
       <div className="relative h-full w-full flex items-end md:items-center">
-        <div className="w-full max-w-7xl mx-auto px-6 md:px-10 pb-16 md:pb-20">
-          <div
-            ref={revealRef}
-            className="reveal reveal-up details-card md:mr-auto md:ml-0"
-            dir="rtl"
-          >
-            <div className="flex items-center gap-3 mb-3">
-              <span className="eyebrow">פרויקט {String(index + 1).padStart(2, '0')}</span>
-              <span className={`text-[.65rem] px-2 py-1 rounded-sm font-semibold tracking-wider ${statusClass}`}>
-                {status}
-              </span>
+        <div className="w-full max-w-7xl mx-auto px-6 md:px-12 pb-16 md:pb-20">
+          <div ref={revealRef} className="reveal reveal-up details-card">
+            <div className="flex items-center gap-2 mb-4 flex-wrap">
+              <span className={`status-pill ${status}`}>{STATUS_LABELS[status] || status}</span>
+              {rented && <span className="tag-pill rented">Fully Rented</span>}
+              {mixedUse && <span className="tag-pill mixed-use">Mixed Use</span>}
+              {goldenVisa && <span className="tag-pill golden-visa">Golden Visa</span>}
             </div>
-            <h2 className="text-3xl md:text-5xl font-semibold mb-1" style={{ fontFamily: 'var(--font-serif)', lineHeight: 1.1 }}>
+
+            <h2 className="text-4xl md:text-6xl font-light mb-1 uppercase" style={{ lineHeight: 1.05, letterSpacing: '0.04em' }}>
               {name}
             </h2>
-            <p className="text-white/70 text-sm md:text-base mb-5">{location}</p>
+            <p className="text-white/65 text-sm md:text-base mb-6 tracking-widest uppercase font-light">
+              {location}
+            </p>
 
-            <div className="flex flex-wrap gap-5 mb-5 text-sm">
-              {units && (
-                <div>
-                  <div className="display-num text-xl md:text-2xl" style={{ color: 'var(--color-gold)' }}>{units}</div>
-                  <div className="text-xs text-white/60 tracking-wider">יחידות</div>
+            <div className="flex gap-4 md:gap-5 mb-6">
+              {units != null && (
+                <div className="metric-circle">
+                  <span className="num">{units}</span>
+                  <span className="unit">{unitsLabel}</span>
                 </div>
               )}
-              {year && (
-                <div>
-                  <div className="display-num text-xl md:text-2xl" style={{ color: 'var(--color-gold)' }}>{year}</div>
-                  <div className="text-xs text-white/60 tracking-wider">שנה</div>
+              {sqm != null && (
+                <div className="metric-circle">
+                  <span className="num">{sqm.toLocaleString()}</span>
+                  <span className="unit">sqm</span>
                 </div>
               )}
             </div>
 
-            <p className="text-white/80 text-sm md:text-base leading-relaxed mb-6 max-w-md">
-              {description}
-            </p>
+            {description && (
+              <p className="text-white/75 text-sm md:text-base leading-relaxed mb-7 max-w-lg font-light">
+                {description}
+              </p>
+            )}
 
             <div className="flex flex-wrap gap-3">
               <button className="btn-gold" onClick={() => onOpenGallery(project)}>
-                גלריה מלאה
-                <span aria-hidden>←</span>
+                Full Gallery
+                <span aria-hidden>→</span>
               </button>
-              <button className="btn-ghost" onClick={() => onOpenGallery(project, 'before')}>
-                ראה תהליך
-              </button>
+              {project.galleries?.some(g => /before/i.test(g.title)) && (
+                <button className="btn-ghost" onClick={() => onOpenGallery(project, 'before')}>
+                  See Transformation
+                </button>
+              )}
             </div>
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-6 left-6 text-white/50 text-xs tracking-[.3em] font-light select-none">
-        <span className="display-num text-sm text-white/80">{String(index + 1).padStart(2, '0')}</span>
-        <span className="mx-2">/</span>
-        <span>{String(total).padStart(2, '0')}</span>
-      </div>
     </section>
   );
 }

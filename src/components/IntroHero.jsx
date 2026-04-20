@@ -1,14 +1,11 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal.js';
+import { COMPANY_STATS } from '../data/projects.js';
 
-// First slide: brand + tagline + scroll cue. Uses the highest-priority hero
-// from the first project as a muted background.
 export default function IntroHero({ backgroundHero }) {
   const textRef = useScrollReveal({ threshold: 0.1 });
-  const innerRef = useRef(null);
 
   useEffect(() => {
-    // Trigger reveal on initial load (no scroll needed for the first slide)
     if (textRef.current) textRef.current.classList.add('is-visible');
   }, [textRef]);
 
@@ -18,29 +15,38 @@ export default function IntroHero({ backgroundHero }) {
         {backgroundHero && (
           <picture>
             <source srcSet={`${backgroundHero[640]} 640w, ${backgroundHero[1280]} 1280w, ${backgroundHero[1920]} 1920w`} sizes="100vw" />
-            <img src={backgroundHero[1280]} alt="" fetchpriority="high" />
+            <img src={backgroundHero[1280]} alt="" fetchPriority="high" />
           </picture>
         )}
-        <div className="slide-overlay" style={{ background: 'linear-gradient(180deg, rgba(15,25,39,0.5) 0%, rgba(15,25,39,0.85) 100%)' }} />
+        <div className="slide-overlay" style={{ background: 'linear-gradient(180deg, rgba(15,25,39,0.6) 0%, rgba(15,25,39,0.9) 100%)' }} />
       </div>
-      <div className="relative h-full w-full flex items-center justify-center px-6">
-        <div ref={textRef} className="reveal reveal-up text-center max-w-3xl" dir="rtl">
-          <div className="eyebrow mb-6 mx-auto">Excellent Group</div>
-          <h1 className="text-5xl md:text-7xl font-semibold mb-5" style={{ fontFamily: 'var(--font-serif)', lineHeight: 1.1 }}>
-            הפורטפוליו<br/>
-            <span style={{ color: 'var(--color-gold)' }}>שלנו</span>
+      <div className="relative h-full w-full flex items-center justify-center px-6 py-10">
+        <div ref={textRef} className="reveal reveal-up text-center w-full max-w-6xl">
+          <div className="eyebrow mb-7 mx-auto">Excellent Group</div>
+          <h1 className="text-5xl md:text-7xl font-light mb-5" style={{ lineHeight: 1.05 }}>
+            Selective<br/>
+            <span style={{ color: 'var(--color-gold)', fontStyle: 'italic', fontWeight: 400 }}>Flagship Projects</span>
           </h1>
-          <p className="text-base md:text-lg text-white/75 leading-relaxed max-w-xl mx-auto mb-10">
-            חזון אדריכלי. ביצוע מוקפד. תוצאות שמדברות בעד עצמן.<br/>
-            גלילה דרך הפרויקטים שהגדירו מחדש שכונות באתונה.
+          <p className="text-base md:text-lg text-white/75 leading-relaxed max-w-xl mx-auto mb-10 font-light">
+            A curated showcase of landmark developments<br/>
+            across Athens and Piraeus.
           </p>
-          <div className="flex flex-col items-center gap-3 mt-14">
-            <span className="text-xs tracking-[.25em] text-white/50">גלול</span>
+
+          <div className="company-stats mb-10">
+            {COMPANY_STATS.map((s) => (
+              <div key={s.label} className="company-stat">
+                <span className="stat-value">{s.value}</span>
+                <span className="stat-label">{s.label}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex flex-col items-center gap-3 mt-2">
+            <span className="text-[.7rem] tracking-[.3em] text-white/50 uppercase">Scroll</span>
             <span className="scroll-cue" aria-hidden="true" />
           </div>
         </div>
       </div>
-      <div ref={innerRef} />
     </section>
   );
 }

@@ -10,37 +10,323 @@ export const generatedProjects = [
       "1280": "/images/acharnon/hero-1280.webp",
       "1920": "/images/acharnon/hero-1920.webp"
     },
-    "gallery": {
-      "after": [
-        "/images/acharnon/after-01.webp",
-        "/images/acharnon/after-02.webp",
-        "/images/acharnon/after-03.webp",
-        "/images/acharnon/after-04.webp"
-      ],
-      "drone": [
-        "/images/acharnon/drone-01.webp",
-        "/images/acharnon/drone-02.webp",
-        "/images/acharnon/drone-03.webp",
-        "/images/acharnon/drone-04.webp"
-      ]
-    }
+    "galleries": [
+      {
+        "id": "external",
+        "title": "External",
+        "count": 11,
+        "images": [
+          {
+            "thumb": "/images/acharnon/external-01-thumb.webp",
+            "full": "/images/acharnon/external-01.webp"
+          },
+          {
+            "thumb": "/images/acharnon/external-02-thumb.webp",
+            "full": "/images/acharnon/external-02.webp"
+          },
+          {
+            "thumb": "/images/acharnon/external-03-thumb.webp",
+            "full": "/images/acharnon/external-03.webp"
+          },
+          {
+            "thumb": "/images/acharnon/external-04-thumb.webp",
+            "full": "/images/acharnon/external-04.webp"
+          },
+          {
+            "thumb": "/images/acharnon/external-05-thumb.webp",
+            "full": "/images/acharnon/external-05.webp"
+          },
+          {
+            "thumb": "/images/acharnon/external-06-thumb.webp",
+            "full": "/images/acharnon/external-06.webp"
+          },
+          {
+            "thumb": "/images/acharnon/external-07-thumb.webp",
+            "full": "/images/acharnon/external-07.webp"
+          },
+          {
+            "thumb": "/images/acharnon/external-08-thumb.webp",
+            "full": "/images/acharnon/external-08.webp"
+          },
+          {
+            "thumb": "/images/acharnon/external-09-thumb.webp",
+            "full": "/images/acharnon/external-09.webp"
+          },
+          {
+            "thumb": "/images/acharnon/external-10-thumb.webp",
+            "full": "/images/acharnon/external-10.webp"
+          },
+          {
+            "thumb": "/images/acharnon/external-11-thumb.webp",
+            "full": "/images/acharnon/external-11.webp"
+          }
+        ]
+      },
+      {
+        "id": "drone",
+        "title": "Drone",
+        "count": 5,
+        "images": [
+          {
+            "thumb": "/images/acharnon/drone-01-thumb.webp",
+            "full": "/images/acharnon/drone-01.webp"
+          },
+          {
+            "thumb": "/images/acharnon/drone-02-thumb.webp",
+            "full": "/images/acharnon/drone-02.webp"
+          },
+          {
+            "thumb": "/images/acharnon/drone-03-thumb.webp",
+            "full": "/images/acharnon/drone-03.webp"
+          },
+          {
+            "thumb": "/images/acharnon/drone-04-thumb.webp",
+            "full": "/images/acharnon/drone-04.webp"
+          },
+          {
+            "thumb": "/images/acharnon/drone-05-thumb.webp",
+            "full": "/images/acharnon/drone-05.webp"
+          }
+        ]
+      },
+      {
+        "id": "internal",
+        "title": "Internal",
+        "count": 34,
+        "images": [
+          {
+            "thumb": "/images/acharnon/internal-01-thumb.webp",
+            "full": "/images/acharnon/internal-01.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-02-thumb.webp",
+            "full": "/images/acharnon/internal-02.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-03-thumb.webp",
+            "full": "/images/acharnon/internal-03.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-04-thumb.webp",
+            "full": "/images/acharnon/internal-04.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-05-thumb.webp",
+            "full": "/images/acharnon/internal-05.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-06-thumb.webp",
+            "full": "/images/acharnon/internal-06.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-07-thumb.webp",
+            "full": "/images/acharnon/internal-07.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-08-thumb.webp",
+            "full": "/images/acharnon/internal-08.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-09-thumb.webp",
+            "full": "/images/acharnon/internal-09.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-10-thumb.webp",
+            "full": "/images/acharnon/internal-10.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-11-thumb.webp",
+            "full": "/images/acharnon/internal-11.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-12-thumb.webp",
+            "full": "/images/acharnon/internal-12.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-13-thumb.webp",
+            "full": "/images/acharnon/internal-13.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-14-thumb.webp",
+            "full": "/images/acharnon/internal-14.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-15-thumb.webp",
+            "full": "/images/acharnon/internal-15.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-16-thumb.webp",
+            "full": "/images/acharnon/internal-16.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-17-thumb.webp",
+            "full": "/images/acharnon/internal-17.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-18-thumb.webp",
+            "full": "/images/acharnon/internal-18.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-19-thumb.webp",
+            "full": "/images/acharnon/internal-19.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-20-thumb.webp",
+            "full": "/images/acharnon/internal-20.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-21-thumb.webp",
+            "full": "/images/acharnon/internal-21.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-22-thumb.webp",
+            "full": "/images/acharnon/internal-22.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-23-thumb.webp",
+            "full": "/images/acharnon/internal-23.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-24-thumb.webp",
+            "full": "/images/acharnon/internal-24.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-25-thumb.webp",
+            "full": "/images/acharnon/internal-25.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-26-thumb.webp",
+            "full": "/images/acharnon/internal-26.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-27-thumb.webp",
+            "full": "/images/acharnon/internal-27.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-28-thumb.webp",
+            "full": "/images/acharnon/internal-28.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-29-thumb.webp",
+            "full": "/images/acharnon/internal-29.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-30-thumb.webp",
+            "full": "/images/acharnon/internal-30.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-31-thumb.webp",
+            "full": "/images/acharnon/internal-31.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-32-thumb.webp",
+            "full": "/images/acharnon/internal-32.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-33-thumb.webp",
+            "full": "/images/acharnon/internal-33.webp"
+          },
+          {
+            "thumb": "/images/acharnon/internal-34-thumb.webp",
+            "full": "/images/acharnon/internal-34.webp"
+          }
+        ]
+      }
+    ]
   },
   {
-    "slug": "ano-patisia",
-    "displayName": "Ano Patisia",
+    "slug": "athens-city-hotel",
+    "displayName": "Benjamin Athens City Hotel",
     "hero": {
-      "640": "/images/ano-patisia/hero-640.webp",
-      "1280": "/images/ano-patisia/hero-1280.webp",
-      "1920": "/images/ano-patisia/hero-1920.webp"
+      "640": "/images/athens-city-hotel/hero-640.webp",
+      "1280": "/images/athens-city-hotel/hero-1280.webp",
+      "1920": "/images/athens-city-hotel/hero-1920.webp"
     },
-    "gallery": {
-      "renderings": [
-        "/images/ano-patisia/renderings-01.webp",
-        "/images/ano-patisia/renderings-02.webp",
-        "/images/ano-patisia/renderings-03.webp",
-        "/images/ano-patisia/renderings-04.webp"
-      ]
-    }
+    "galleries": [
+      {
+        "id": "drone-shots",
+        "title": "Drone Shots",
+        "count": 3,
+        "images": [
+          {
+            "thumb": "/images/athens-city-hotel/drone-shots-01-thumb.webp",
+            "full": "/images/athens-city-hotel/drone-shots-01.webp"
+          },
+          {
+            "thumb": "/images/athens-city-hotel/drone-shots-02-thumb.webp",
+            "full": "/images/athens-city-hotel/drone-shots-02.webp"
+          },
+          {
+            "thumb": "/images/athens-city-hotel/drone-shots-03-thumb.webp",
+            "full": "/images/athens-city-hotel/drone-shots-03.webp"
+          }
+        ]
+      },
+      {
+        "id": "ground-floor",
+        "title": "Ground Floor",
+        "count": 5,
+        "images": [
+          {
+            "thumb": "/images/athens-city-hotel/ground-floor-01-thumb.webp",
+            "full": "/images/athens-city-hotel/ground-floor-01.webp"
+          },
+          {
+            "thumb": "/images/athens-city-hotel/ground-floor-02-thumb.webp",
+            "full": "/images/athens-city-hotel/ground-floor-02.webp"
+          },
+          {
+            "thumb": "/images/athens-city-hotel/ground-floor-03-thumb.webp",
+            "full": "/images/athens-city-hotel/ground-floor-03.webp"
+          },
+          {
+            "thumb": "/images/athens-city-hotel/ground-floor-04-thumb.webp",
+            "full": "/images/athens-city-hotel/ground-floor-04.webp"
+          },
+          {
+            "thumb": "/images/athens-city-hotel/ground-floor-05-thumb.webp",
+            "full": "/images/athens-city-hotel/ground-floor-05.webp"
+          }
+        ]
+      },
+      {
+        "id": "1st-floor",
+        "title": "1st Floor",
+        "count": 1,
+        "images": [
+          {
+            "thumb": "/images/athens-city-hotel/1st-floor-01-thumb.webp",
+            "full": "/images/athens-city-hotel/1st-floor-01.webp"
+          }
+        ]
+      },
+      {
+        "id": "2nd-floor",
+        "title": "2nd Floor",
+        "count": 2,
+        "images": [
+          {
+            "thumb": "/images/athens-city-hotel/2nd-floor-01-thumb.webp",
+            "full": "/images/athens-city-hotel/2nd-floor-01.webp"
+          },
+          {
+            "thumb": "/images/athens-city-hotel/2nd-floor-02-thumb.webp",
+            "full": "/images/athens-city-hotel/2nd-floor-02.webp"
+          }
+        ]
+      },
+      {
+        "id": "3rd-floor",
+        "title": "3rd Floor",
+        "count": 1,
+        "images": [
+          {
+            "thumb": "/images/athens-city-hotel/3rd-floor-01-thumb.webp",
+            "full": "/images/athens-city-hotel/3rd-floor-01.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "chrisopoleos",
@@ -50,20 +336,324 @@ export const generatedProjects = [
       "1280": "/images/chrisopoleos/hero-1280.webp",
       "1920": "/images/chrisopoleos/hero-1920.webp"
     },
-    "gallery": {
-      "renderings": [
-        "/images/chrisopoleos/renderings-01.webp",
-        "/images/chrisopoleos/renderings-02.webp",
-        "/images/chrisopoleos/renderings-03.webp",
-        "/images/chrisopoleos/renderings-04.webp"
-      ],
-      "drone": [
-        "/images/chrisopoleos/drone-01.webp",
-        "/images/chrisopoleos/drone-02.webp",
-        "/images/chrisopoleos/drone-03.webp",
-        "/images/chrisopoleos/drone-04.webp"
-      ]
-    }
+    "galleries": [
+      {
+        "id": "exterior-design",
+        "title": "Exterior Design",
+        "count": 4,
+        "images": [
+          {
+            "thumb": "/images/chrisopoleos/exterior-design-01-thumb.webp",
+            "full": "/images/chrisopoleos/exterior-design-01.webp"
+          },
+          {
+            "thumb": "/images/chrisopoleos/exterior-design-02-thumb.webp",
+            "full": "/images/chrisopoleos/exterior-design-02.webp"
+          },
+          {
+            "thumb": "/images/chrisopoleos/exterior-design-03-thumb.webp",
+            "full": "/images/chrisopoleos/exterior-design-03.webp"
+          },
+          {
+            "thumb": "/images/chrisopoleos/exterior-design-04-thumb.webp",
+            "full": "/images/chrisopoleos/exterior-design-04.webp"
+          }
+        ]
+      },
+      {
+        "id": "drone",
+        "title": "Drone",
+        "count": 7,
+        "images": [
+          {
+            "thumb": "/images/chrisopoleos/drone-01-thumb.webp",
+            "full": "/images/chrisopoleos/drone-01.webp"
+          },
+          {
+            "thumb": "/images/chrisopoleos/drone-02-thumb.webp",
+            "full": "/images/chrisopoleos/drone-02.webp"
+          },
+          {
+            "thumb": "/images/chrisopoleos/drone-03-thumb.webp",
+            "full": "/images/chrisopoleos/drone-03.webp"
+          },
+          {
+            "thumb": "/images/chrisopoleos/drone-04-thumb.webp",
+            "full": "/images/chrisopoleos/drone-04.webp"
+          },
+          {
+            "thumb": "/images/chrisopoleos/drone-05-thumb.webp",
+            "full": "/images/chrisopoleos/drone-05.webp"
+          },
+          {
+            "thumb": "/images/chrisopoleos/drone-06-thumb.webp",
+            "full": "/images/chrisopoleos/drone-06.webp"
+          },
+          {
+            "thumb": "/images/chrisopoleos/drone-07-thumb.webp",
+            "full": "/images/chrisopoleos/drone-07.webp"
+          }
+        ]
+      },
+      {
+        "id": "interior-design",
+        "title": "Interior Design",
+        "count": 10,
+        "images": [
+          {
+            "thumb": "/images/chrisopoleos/interior-design-01-thumb.webp",
+            "full": "/images/chrisopoleos/interior-design-01.webp"
+          },
+          {
+            "thumb": "/images/chrisopoleos/interior-design-02-thumb.webp",
+            "full": "/images/chrisopoleos/interior-design-02.webp"
+          },
+          {
+            "thumb": "/images/chrisopoleos/interior-design-03-thumb.webp",
+            "full": "/images/chrisopoleos/interior-design-03.webp"
+          },
+          {
+            "thumb": "/images/chrisopoleos/interior-design-04-thumb.webp",
+            "full": "/images/chrisopoleos/interior-design-04.webp"
+          },
+          {
+            "thumb": "/images/chrisopoleos/interior-design-05-thumb.webp",
+            "full": "/images/chrisopoleos/interior-design-05.webp"
+          },
+          {
+            "thumb": "/images/chrisopoleos/interior-design-06-thumb.webp",
+            "full": "/images/chrisopoleos/interior-design-06.webp"
+          },
+          {
+            "thumb": "/images/chrisopoleos/interior-design-07-thumb.webp",
+            "full": "/images/chrisopoleos/interior-design-07.webp"
+          },
+          {
+            "thumb": "/images/chrisopoleos/interior-design-08-thumb.webp",
+            "full": "/images/chrisopoleos/interior-design-08.webp"
+          },
+          {
+            "thumb": "/images/chrisopoleos/interior-design-09-thumb.webp",
+            "full": "/images/chrisopoleos/interior-design-09.webp"
+          },
+          {
+            "thumb": "/images/chrisopoleos/interior-design-10-thumb.webp",
+            "full": "/images/chrisopoleos/interior-design-10.webp"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "egaleo",
+    "displayName": "Egaleo",
+    "hero": {
+      "640": "/images/egaleo/hero-640.webp",
+      "1280": "/images/egaleo/hero-1280.webp",
+      "1920": "/images/egaleo/hero-1920.webp"
+    },
+    "galleries": [
+      {
+        "id": "drone",
+        "title": "Drone",
+        "count": 6,
+        "images": [
+          {
+            "thumb": "/images/egaleo/drone-01-thumb.webp",
+            "full": "/images/egaleo/drone-01.webp"
+          },
+          {
+            "thumb": "/images/egaleo/drone-02-thumb.webp",
+            "full": "/images/egaleo/drone-02.webp"
+          },
+          {
+            "thumb": "/images/egaleo/drone-03-thumb.webp",
+            "full": "/images/egaleo/drone-03.webp"
+          },
+          {
+            "thumb": "/images/egaleo/drone-04-thumb.webp",
+            "full": "/images/egaleo/drone-04.webp"
+          },
+          {
+            "thumb": "/images/egaleo/drone-05-thumb.webp",
+            "full": "/images/egaleo/drone-05.webp"
+          },
+          {
+            "thumb": "/images/egaleo/drone-06-thumb.webp",
+            "full": "/images/egaleo/drone-06.webp"
+          }
+        ]
+      },
+      {
+        "id": "gallery",
+        "title": "Gallery",
+        "count": 7,
+        "images": [
+          {
+            "thumb": "/images/egaleo/gallery-01-thumb.webp",
+            "full": "/images/egaleo/gallery-01.webp"
+          },
+          {
+            "thumb": "/images/egaleo/gallery-02-thumb.webp",
+            "full": "/images/egaleo/gallery-02.webp"
+          },
+          {
+            "thumb": "/images/egaleo/gallery-03-thumb.webp",
+            "full": "/images/egaleo/gallery-03.webp"
+          },
+          {
+            "thumb": "/images/egaleo/gallery-04-thumb.webp",
+            "full": "/images/egaleo/gallery-04.webp"
+          },
+          {
+            "thumb": "/images/egaleo/gallery-05-thumb.webp",
+            "full": "/images/egaleo/gallery-05.webp"
+          },
+          {
+            "thumb": "/images/egaleo/gallery-06-thumb.webp",
+            "full": "/images/egaleo/gallery-06.webp"
+          },
+          {
+            "thumb": "/images/egaleo/gallery-07-thumb.webp",
+            "full": "/images/egaleo/gallery-07.webp"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "evia",
+    "displayName": "Evia Hotel",
+    "hero": {
+      "640": "/images/evia/hero-640.webp",
+      "1280": "/images/evia/hero-1280.webp",
+      "1920": "/images/evia/hero-1920.webp"
+    },
+    "galleries": [
+      {
+        "id": "gallery",
+        "title": "Gallery",
+        "count": 29,
+        "images": [
+          {
+            "thumb": "/images/evia/gallery-01-thumb.webp",
+            "full": "/images/evia/gallery-01.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-02-thumb.webp",
+            "full": "/images/evia/gallery-02.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-03-thumb.webp",
+            "full": "/images/evia/gallery-03.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-04-thumb.webp",
+            "full": "/images/evia/gallery-04.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-05-thumb.webp",
+            "full": "/images/evia/gallery-05.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-06-thumb.webp",
+            "full": "/images/evia/gallery-06.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-07-thumb.webp",
+            "full": "/images/evia/gallery-07.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-08-thumb.webp",
+            "full": "/images/evia/gallery-08.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-09-thumb.webp",
+            "full": "/images/evia/gallery-09.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-10-thumb.webp",
+            "full": "/images/evia/gallery-10.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-11-thumb.webp",
+            "full": "/images/evia/gallery-11.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-12-thumb.webp",
+            "full": "/images/evia/gallery-12.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-13-thumb.webp",
+            "full": "/images/evia/gallery-13.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-14-thumb.webp",
+            "full": "/images/evia/gallery-14.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-15-thumb.webp",
+            "full": "/images/evia/gallery-15.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-16-thumb.webp",
+            "full": "/images/evia/gallery-16.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-17-thumb.webp",
+            "full": "/images/evia/gallery-17.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-18-thumb.webp",
+            "full": "/images/evia/gallery-18.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-19-thumb.webp",
+            "full": "/images/evia/gallery-19.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-20-thumb.webp",
+            "full": "/images/evia/gallery-20.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-21-thumb.webp",
+            "full": "/images/evia/gallery-21.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-22-thumb.webp",
+            "full": "/images/evia/gallery-22.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-23-thumb.webp",
+            "full": "/images/evia/gallery-23.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-24-thumb.webp",
+            "full": "/images/evia/gallery-24.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-25-thumb.webp",
+            "full": "/images/evia/gallery-25.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-26-thumb.webp",
+            "full": "/images/evia/gallery-26.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-27-thumb.webp",
+            "full": "/images/evia/gallery-27.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-28-thumb.webp",
+            "full": "/images/evia/gallery-28.webp"
+          },
+          {
+            "thumb": "/images/evia/gallery-29-thumb.webp",
+            "full": "/images/evia/gallery-29.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "gyzi",
@@ -73,20 +663,109 @@ export const generatedProjects = [
       "1280": "/images/gyzi/hero-1280.webp",
       "1920": "/images/gyzi/hero-1920.webp"
     },
-    "gallery": {
-      "during": [
-        "/images/gyzi/during-01.webp",
-        "/images/gyzi/during-02.webp",
-        "/images/gyzi/during-03.webp",
-        "/images/gyzi/during-04.webp"
-      ],
-      "after": [
-        "/images/gyzi/after-01.webp",
-        "/images/gyzi/after-02.webp",
-        "/images/gyzi/after-03.webp",
-        "/images/gyzi/after-04.webp"
-      ]
-    }
+    "galleries": [
+      {
+        "id": "drone-finished",
+        "title": "Drone Finished",
+        "count": 4,
+        "images": [
+          {
+            "thumb": "/images/gyzi/drone-finished-01-thumb.webp",
+            "full": "/images/gyzi/drone-finished-01.webp"
+          },
+          {
+            "thumb": "/images/gyzi/drone-finished-02-thumb.webp",
+            "full": "/images/gyzi/drone-finished-02.webp"
+          },
+          {
+            "thumb": "/images/gyzi/drone-finished-03-thumb.webp",
+            "full": "/images/gyzi/drone-finished-03.webp"
+          },
+          {
+            "thumb": "/images/gyzi/drone-finished-04-thumb.webp",
+            "full": "/images/gyzi/drone-finished-04.webp"
+          }
+        ]
+      },
+      {
+        "id": "ready",
+        "title": "Ready",
+        "count": 8,
+        "images": [
+          {
+            "thumb": "/images/gyzi/ready-01-thumb.webp",
+            "full": "/images/gyzi/ready-01.webp"
+          },
+          {
+            "thumb": "/images/gyzi/ready-02-thumb.webp",
+            "full": "/images/gyzi/ready-02.webp"
+          },
+          {
+            "thumb": "/images/gyzi/ready-03-thumb.webp",
+            "full": "/images/gyzi/ready-03.webp"
+          },
+          {
+            "thumb": "/images/gyzi/ready-04-thumb.webp",
+            "full": "/images/gyzi/ready-04.webp"
+          },
+          {
+            "thumb": "/images/gyzi/ready-05-thumb.webp",
+            "full": "/images/gyzi/ready-05.webp"
+          },
+          {
+            "thumb": "/images/gyzi/ready-06-thumb.webp",
+            "full": "/images/gyzi/ready-06.webp"
+          },
+          {
+            "thumb": "/images/gyzi/ready-07-thumb.webp",
+            "full": "/images/gyzi/ready-07.webp"
+          },
+          {
+            "thumb": "/images/gyzi/ready-08-thumb.webp",
+            "full": "/images/gyzi/ready-08.webp"
+          }
+        ]
+      },
+      {
+        "id": "renovations",
+        "title": "Renovations",
+        "count": 8,
+        "images": [
+          {
+            "thumb": "/images/gyzi/renovations-01-thumb.webp",
+            "full": "/images/gyzi/renovations-01.webp"
+          },
+          {
+            "thumb": "/images/gyzi/renovations-02-thumb.webp",
+            "full": "/images/gyzi/renovations-02.webp"
+          },
+          {
+            "thumb": "/images/gyzi/renovations-03-thumb.webp",
+            "full": "/images/gyzi/renovations-03.webp"
+          },
+          {
+            "thumb": "/images/gyzi/renovations-04-thumb.webp",
+            "full": "/images/gyzi/renovations-04.webp"
+          },
+          {
+            "thumb": "/images/gyzi/renovations-05-thumb.webp",
+            "full": "/images/gyzi/renovations-05.webp"
+          },
+          {
+            "thumb": "/images/gyzi/renovations-06-thumb.webp",
+            "full": "/images/gyzi/renovations-06.webp"
+          },
+          {
+            "thumb": "/images/gyzi/renovations-07-thumb.webp",
+            "full": "/images/gyzi/renovations-07.webp"
+          },
+          {
+            "thumb": "/images/gyzi/renovations-08-thumb.webp",
+            "full": "/images/gyzi/renovations-08.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "ilioupoli",
@@ -96,40 +775,331 @@ export const generatedProjects = [
       "1280": "/images/ilioupoli/hero-1280.webp",
       "1920": "/images/ilioupoli/hero-1920.webp"
     },
-    "gallery": {
-      "before": [
-        "/images/ilioupoli/before-01.webp",
-        "/images/ilioupoli/before-02.webp",
-        "/images/ilioupoli/before-03.webp",
-        "/images/ilioupoli/before-04.webp"
-      ],
-      "during": [
-        "/images/ilioupoli/during-01.webp",
-        "/images/ilioupoli/during-02.webp",
-        "/images/ilioupoli/during-03.webp",
-        "/images/ilioupoli/during-04.webp"
-      ],
-      "after": [
-        "/images/ilioupoli/after-01.webp",
-        "/images/ilioupoli/after-02.webp",
-        "/images/ilioupoli/after-03.webp",
-        "/images/ilioupoli/after-04.webp"
-      ]
-    }
+    "galleries": [
+      {
+        "id": "external-2",
+        "title": "External 2",
+        "count": 12,
+        "images": [
+          {
+            "thumb": "/images/ilioupoli/external-2-01-thumb.webp",
+            "full": "/images/ilioupoli/external-2-01.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/external-2-02-thumb.webp",
+            "full": "/images/ilioupoli/external-2-02.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/external-2-03-thumb.webp",
+            "full": "/images/ilioupoli/external-2-03.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/external-2-04-thumb.webp",
+            "full": "/images/ilioupoli/external-2-04.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/external-2-05-thumb.webp",
+            "full": "/images/ilioupoli/external-2-05.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/external-2-06-thumb.webp",
+            "full": "/images/ilioupoli/external-2-06.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/external-2-07-thumb.webp",
+            "full": "/images/ilioupoli/external-2-07.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/external-2-08-thumb.webp",
+            "full": "/images/ilioupoli/external-2-08.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/external-2-09-thumb.webp",
+            "full": "/images/ilioupoli/external-2-09.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/external-2-10-thumb.webp",
+            "full": "/images/ilioupoli/external-2-10.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/external-2-11-thumb.webp",
+            "full": "/images/ilioupoli/external-2-11.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/external-2-12-thumb.webp",
+            "full": "/images/ilioupoli/external-2-12.webp"
+          }
+        ]
+      },
+      {
+        "id": "drone-before",
+        "title": "Drone Before",
+        "count": 4,
+        "images": [
+          {
+            "thumb": "/images/ilioupoli/drone-before-01-thumb.webp",
+            "full": "/images/ilioupoli/drone-before-01.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/drone-before-02-thumb.webp",
+            "full": "/images/ilioupoli/drone-before-02.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/drone-before-03-thumb.webp",
+            "full": "/images/ilioupoli/drone-before-03.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/drone-before-04-thumb.webp",
+            "full": "/images/ilioupoli/drone-before-04.webp"
+          }
+        ]
+      },
+      {
+        "id": "drone-middle",
+        "title": "Drone Middle",
+        "count": 6,
+        "images": [
+          {
+            "thumb": "/images/ilioupoli/drone-middle-01-thumb.webp",
+            "full": "/images/ilioupoli/drone-middle-01.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/drone-middle-02-thumb.webp",
+            "full": "/images/ilioupoli/drone-middle-02.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/drone-middle-03-thumb.webp",
+            "full": "/images/ilioupoli/drone-middle-03.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/drone-middle-04-thumb.webp",
+            "full": "/images/ilioupoli/drone-middle-04.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/drone-middle-05-thumb.webp",
+            "full": "/images/ilioupoli/drone-middle-05.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/drone-middle-06-thumb.webp",
+            "full": "/images/ilioupoli/drone-middle-06.webp"
+          }
+        ]
+      },
+      {
+        "id": "interiors",
+        "title": "Interiors",
+        "count": 7,
+        "images": [
+          {
+            "thumb": "/images/ilioupoli/interiors-01-thumb.webp",
+            "full": "/images/ilioupoli/interiors-01.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/interiors-02-thumb.webp",
+            "full": "/images/ilioupoli/interiors-02.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/interiors-03-thumb.webp",
+            "full": "/images/ilioupoli/interiors-03.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/interiors-04-thumb.webp",
+            "full": "/images/ilioupoli/interiors-04.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/interiors-05-thumb.webp",
+            "full": "/images/ilioupoli/interiors-05.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/interiors-06-thumb.webp",
+            "full": "/images/ilioupoli/interiors-06.webp"
+          },
+          {
+            "thumb": "/images/ilioupoli/interiors-07-thumb.webp",
+            "full": "/images/ilioupoli/interiors-07.webp"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "kypseli",
+    "displayName": "Kypseli",
+    "hero": {
+      "640": "/images/kypseli/hero-640.webp",
+      "1280": "/images/kypseli/hero-1280.webp",
+      "1920": "/images/kypseli/hero-1920.webp"
+    },
+    "galleries": [
+      {
+        "id": "drone",
+        "title": "Drone",
+        "count": 9,
+        "images": [
+          {
+            "thumb": "/images/kypseli/drone-01-thumb.webp",
+            "full": "/images/kypseli/drone-01.webp"
+          },
+          {
+            "thumb": "/images/kypseli/drone-02-thumb.webp",
+            "full": "/images/kypseli/drone-02.webp"
+          },
+          {
+            "thumb": "/images/kypseli/drone-03-thumb.webp",
+            "full": "/images/kypseli/drone-03.webp"
+          },
+          {
+            "thumb": "/images/kypseli/drone-04-thumb.webp",
+            "full": "/images/kypseli/drone-04.webp"
+          },
+          {
+            "thumb": "/images/kypseli/drone-05-thumb.webp",
+            "full": "/images/kypseli/drone-05.webp"
+          },
+          {
+            "thumb": "/images/kypseli/drone-06-thumb.webp",
+            "full": "/images/kypseli/drone-06.webp"
+          },
+          {
+            "thumb": "/images/kypseli/drone-07-thumb.webp",
+            "full": "/images/kypseli/drone-07.webp"
+          },
+          {
+            "thumb": "/images/kypseli/drone-08-thumb.webp",
+            "full": "/images/kypseli/drone-08.webp"
+          },
+          {
+            "thumb": "/images/kypseli/drone-09-thumb.webp",
+            "full": "/images/kypseli/drone-09.webp"
+          }
+        ]
+      },
+      {
+        "id": "rented",
+        "title": "Rented",
+        "count": 23,
+        "images": [
+          {
+            "thumb": "/images/kypseli/rented-01-thumb.webp",
+            "full": "/images/kypseli/rented-01.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-02-thumb.webp",
+            "full": "/images/kypseli/rented-02.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-03-thumb.webp",
+            "full": "/images/kypseli/rented-03.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-04-thumb.webp",
+            "full": "/images/kypseli/rented-04.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-05-thumb.webp",
+            "full": "/images/kypseli/rented-05.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-06-thumb.webp",
+            "full": "/images/kypseli/rented-06.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-07-thumb.webp",
+            "full": "/images/kypseli/rented-07.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-08-thumb.webp",
+            "full": "/images/kypseli/rented-08.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-09-thumb.webp",
+            "full": "/images/kypseli/rented-09.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-10-thumb.webp",
+            "full": "/images/kypseli/rented-10.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-11-thumb.webp",
+            "full": "/images/kypseli/rented-11.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-12-thumb.webp",
+            "full": "/images/kypseli/rented-12.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-13-thumb.webp",
+            "full": "/images/kypseli/rented-13.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-14-thumb.webp",
+            "full": "/images/kypseli/rented-14.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-15-thumb.webp",
+            "full": "/images/kypseli/rented-15.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-16-thumb.webp",
+            "full": "/images/kypseli/rented-16.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-17-thumb.webp",
+            "full": "/images/kypseli/rented-17.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-18-thumb.webp",
+            "full": "/images/kypseli/rented-18.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-19-thumb.webp",
+            "full": "/images/kypseli/rented-19.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-20-thumb.webp",
+            "full": "/images/kypseli/rented-20.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-21-thumb.webp",
+            "full": "/images/kypseli/rented-21.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-22-thumb.webp",
+            "full": "/images/kypseli/rented-22.webp"
+          },
+          {
+            "thumb": "/images/kypseli/rented-23-thumb.webp",
+            "full": "/images/kypseli/rented-23.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "nikia",
-    "displayName": "Nikia",
+    "displayName": "Nikia N45",
     "hero": {
       "640": "/images/nikia/hero-640.webp",
       "1280": "/images/nikia/hero-1280.webp",
       "1920": "/images/nikia/hero-1920.webp"
     },
-    "gallery": {
-      "after": [
-        "/images/nikia/after-01.webp"
-      ]
-    }
+    "galleries": [
+      {
+        "id": "external",
+        "title": "External",
+        "count": 2,
+        "images": [
+          {
+            "thumb": "/images/nikia/external-01-thumb.webp",
+            "full": "/images/nikia/external-01.webp"
+          },
+          {
+            "thumb": "/images/nikia/external-02-thumb.webp",
+            "full": "/images/nikia/external-02.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "pergamou",
@@ -139,20 +1109,223 @@ export const generatedProjects = [
       "1280": "/images/pergamou/hero-1280.webp",
       "1920": "/images/pergamou/hero-1920.webp"
     },
-    "gallery": {
-      "during": [
-        "/images/pergamou/during-01.webp",
-        "/images/pergamou/during-02.webp",
-        "/images/pergamou/during-03.webp",
-        "/images/pergamou/during-04.webp"
-      ],
-      "after": [
-        "/images/pergamou/after-01.webp",
-        "/images/pergamou/after-02.webp",
-        "/images/pergamou/after-03.webp",
-        "/images/pergamou/after-04.webp"
-      ]
-    }
+    "galleries": [
+      {
+        "id": "drone-ready",
+        "title": "Drone Ready",
+        "count": 5,
+        "images": [
+          {
+            "thumb": "/images/pergamou/drone-ready-01-thumb.webp",
+            "full": "/images/pergamou/drone-ready-01.webp"
+          },
+          {
+            "thumb": "/images/pergamou/drone-ready-02-thumb.webp",
+            "full": "/images/pergamou/drone-ready-02.webp"
+          },
+          {
+            "thumb": "/images/pergamou/drone-ready-03-thumb.webp",
+            "full": "/images/pergamou/drone-ready-03.webp"
+          },
+          {
+            "thumb": "/images/pergamou/drone-ready-04-thumb.webp",
+            "full": "/images/pergamou/drone-ready-04.webp"
+          },
+          {
+            "thumb": "/images/pergamou/drone-ready-05-thumb.webp",
+            "full": "/images/pergamou/drone-ready-05.webp"
+          }
+        ]
+      },
+      {
+        "id": "ready-apartments",
+        "title": "Ready Apartments",
+        "count": 11,
+        "images": [
+          {
+            "thumb": "/images/pergamou/ready-apartments-01-thumb.webp",
+            "full": "/images/pergamou/ready-apartments-01.webp"
+          },
+          {
+            "thumb": "/images/pergamou/ready-apartments-02-thumb.webp",
+            "full": "/images/pergamou/ready-apartments-02.webp"
+          },
+          {
+            "thumb": "/images/pergamou/ready-apartments-03-thumb.webp",
+            "full": "/images/pergamou/ready-apartments-03.webp"
+          },
+          {
+            "thumb": "/images/pergamou/ready-apartments-04-thumb.webp",
+            "full": "/images/pergamou/ready-apartments-04.webp"
+          },
+          {
+            "thumb": "/images/pergamou/ready-apartments-05-thumb.webp",
+            "full": "/images/pergamou/ready-apartments-05.webp"
+          },
+          {
+            "thumb": "/images/pergamou/ready-apartments-06-thumb.webp",
+            "full": "/images/pergamou/ready-apartments-06.webp"
+          },
+          {
+            "thumb": "/images/pergamou/ready-apartments-07-thumb.webp",
+            "full": "/images/pergamou/ready-apartments-07.webp"
+          },
+          {
+            "thumb": "/images/pergamou/ready-apartments-08-thumb.webp",
+            "full": "/images/pergamou/ready-apartments-08.webp"
+          },
+          {
+            "thumb": "/images/pergamou/ready-apartments-09-thumb.webp",
+            "full": "/images/pergamou/ready-apartments-09.webp"
+          },
+          {
+            "thumb": "/images/pergamou/ready-apartments-10-thumb.webp",
+            "full": "/images/pergamou/ready-apartments-10.webp"
+          },
+          {
+            "thumb": "/images/pergamou/ready-apartments-11-thumb.webp",
+            "full": "/images/pergamou/ready-apartments-11.webp"
+          }
+        ]
+      },
+      {
+        "id": "renovations",
+        "title": "Renovations",
+        "count": 14,
+        "images": [
+          {
+            "thumb": "/images/pergamou/renovations-01-thumb.webp",
+            "full": "/images/pergamou/renovations-01.webp"
+          },
+          {
+            "thumb": "/images/pergamou/renovations-02-thumb.webp",
+            "full": "/images/pergamou/renovations-02.webp"
+          },
+          {
+            "thumb": "/images/pergamou/renovations-03-thumb.webp",
+            "full": "/images/pergamou/renovations-03.webp"
+          },
+          {
+            "thumb": "/images/pergamou/renovations-04-thumb.webp",
+            "full": "/images/pergamou/renovations-04.webp"
+          },
+          {
+            "thumb": "/images/pergamou/renovations-05-thumb.webp",
+            "full": "/images/pergamou/renovations-05.webp"
+          },
+          {
+            "thumb": "/images/pergamou/renovations-06-thumb.webp",
+            "full": "/images/pergamou/renovations-06.webp"
+          },
+          {
+            "thumb": "/images/pergamou/renovations-07-thumb.webp",
+            "full": "/images/pergamou/renovations-07.webp"
+          },
+          {
+            "thumb": "/images/pergamou/renovations-08-thumb.webp",
+            "full": "/images/pergamou/renovations-08.webp"
+          },
+          {
+            "thumb": "/images/pergamou/renovations-09-thumb.webp",
+            "full": "/images/pergamou/renovations-09.webp"
+          },
+          {
+            "thumb": "/images/pergamou/renovations-10-thumb.webp",
+            "full": "/images/pergamou/renovations-10.webp"
+          },
+          {
+            "thumb": "/images/pergamou/renovations-11-thumb.webp",
+            "full": "/images/pergamou/renovations-11.webp"
+          },
+          {
+            "thumb": "/images/pergamou/renovations-12-thumb.webp",
+            "full": "/images/pergamou/renovations-12.webp"
+          },
+          {
+            "thumb": "/images/pergamou/renovations-13-thumb.webp",
+            "full": "/images/pergamou/renovations-13.webp"
+          },
+          {
+            "thumb": "/images/pergamou/renovations-14-thumb.webp",
+            "full": "/images/pergamou/renovations-14.webp"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "peristeri",
+    "displayName": "Peristeri",
+    "hero": {
+      "640": "/images/peristeri/hero-640.webp",
+      "1280": "/images/peristeri/hero-1280.webp",
+      "1920": "/images/peristeri/hero-1920.webp"
+    },
+    "galleries": [
+      {
+        "id": "gallery",
+        "title": "Gallery",
+        "count": 14,
+        "images": [
+          {
+            "thumb": "/images/peristeri/gallery-01-thumb.webp",
+            "full": "/images/peristeri/gallery-01.webp"
+          },
+          {
+            "thumb": "/images/peristeri/gallery-02-thumb.webp",
+            "full": "/images/peristeri/gallery-02.webp"
+          },
+          {
+            "thumb": "/images/peristeri/gallery-03-thumb.webp",
+            "full": "/images/peristeri/gallery-03.webp"
+          },
+          {
+            "thumb": "/images/peristeri/gallery-04-thumb.webp",
+            "full": "/images/peristeri/gallery-04.webp"
+          },
+          {
+            "thumb": "/images/peristeri/gallery-05-thumb.webp",
+            "full": "/images/peristeri/gallery-05.webp"
+          },
+          {
+            "thumb": "/images/peristeri/gallery-06-thumb.webp",
+            "full": "/images/peristeri/gallery-06.webp"
+          },
+          {
+            "thumb": "/images/peristeri/gallery-07-thumb.webp",
+            "full": "/images/peristeri/gallery-07.webp"
+          },
+          {
+            "thumb": "/images/peristeri/gallery-08-thumb.webp",
+            "full": "/images/peristeri/gallery-08.webp"
+          },
+          {
+            "thumb": "/images/peristeri/gallery-09-thumb.webp",
+            "full": "/images/peristeri/gallery-09.webp"
+          },
+          {
+            "thumb": "/images/peristeri/gallery-10-thumb.webp",
+            "full": "/images/peristeri/gallery-10.webp"
+          },
+          {
+            "thumb": "/images/peristeri/gallery-11-thumb.webp",
+            "full": "/images/peristeri/gallery-11.webp"
+          },
+          {
+            "thumb": "/images/peristeri/gallery-12-thumb.webp",
+            "full": "/images/peristeri/gallery-12.webp"
+          },
+          {
+            "thumb": "/images/peristeri/gallery-13-thumb.webp",
+            "full": "/images/peristeri/gallery-13.webp"
+          },
+          {
+            "thumb": "/images/peristeri/gallery-14-thumb.webp",
+            "full": "/images/peristeri/gallery-14.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "redestou",
@@ -162,20 +1335,93 @@ export const generatedProjects = [
       "1280": "/images/redestou/hero-1280.webp",
       "1920": "/images/redestou/hero-1920.webp"
     },
-    "gallery": {
-      "before": [
-        "/images/redestou/before-01.webp",
-        "/images/redestou/before-02.webp",
-        "/images/redestou/before-03.webp",
-        "/images/redestou/before-04.webp"
-      ],
-      "renderings": [
-        "/images/redestou/renderings-01.webp",
-        "/images/redestou/renderings-02.webp",
-        "/images/redestou/renderings-03.webp",
-        "/images/redestou/renderings-04.webp"
-      ]
-    }
+    "galleries": [
+      {
+        "id": "external-renderings",
+        "title": "External Renderings",
+        "count": 4,
+        "images": [
+          {
+            "thumb": "/images/redestou/external-renderings-01-thumb.webp",
+            "full": "/images/redestou/external-renderings-01.webp"
+          },
+          {
+            "thumb": "/images/redestou/external-renderings-02-thumb.webp",
+            "full": "/images/redestou/external-renderings-02.webp"
+          },
+          {
+            "thumb": "/images/redestou/external-renderings-03-thumb.webp",
+            "full": "/images/redestou/external-renderings-03.webp"
+          },
+          {
+            "thumb": "/images/redestou/external-renderings-04-thumb.webp",
+            "full": "/images/redestou/external-renderings-04.webp"
+          }
+        ]
+      },
+      {
+        "id": "drone-before",
+        "title": "Drone Before",
+        "count": 4,
+        "images": [
+          {
+            "thumb": "/images/redestou/drone-before-01-thumb.webp",
+            "full": "/images/redestou/drone-before-01.webp"
+          },
+          {
+            "thumb": "/images/redestou/drone-before-02-thumb.webp",
+            "full": "/images/redestou/drone-before-02.webp"
+          },
+          {
+            "thumb": "/images/redestou/drone-before-03-thumb.webp",
+            "full": "/images/redestou/drone-before-03.webp"
+          },
+          {
+            "thumb": "/images/redestou/drone-before-04-thumb.webp",
+            "full": "/images/redestou/drone-before-04.webp"
+          }
+        ]
+      },
+      {
+        "id": "internal-renderings",
+        "title": "Internal Renderings",
+        "count": 8,
+        "images": [
+          {
+            "thumb": "/images/redestou/internal-renderings-01-thumb.webp",
+            "full": "/images/redestou/internal-renderings-01.webp"
+          },
+          {
+            "thumb": "/images/redestou/internal-renderings-02-thumb.webp",
+            "full": "/images/redestou/internal-renderings-02.webp"
+          },
+          {
+            "thumb": "/images/redestou/internal-renderings-03-thumb.webp",
+            "full": "/images/redestou/internal-renderings-03.webp"
+          },
+          {
+            "thumb": "/images/redestou/internal-renderings-04-thumb.webp",
+            "full": "/images/redestou/internal-renderings-04.webp"
+          },
+          {
+            "thumb": "/images/redestou/internal-renderings-05-thumb.webp",
+            "full": "/images/redestou/internal-renderings-05.webp"
+          },
+          {
+            "thumb": "/images/redestou/internal-renderings-06-thumb.webp",
+            "full": "/images/redestou/internal-renderings-06.webp"
+          },
+          {
+            "thumb": "/images/redestou/internal-renderings-07-thumb.webp",
+            "full": "/images/redestou/internal-renderings-07.webp"
+          },
+          {
+            "thumb": "/images/redestou/internal-renderings-08-thumb.webp",
+            "full": "/images/redestou/internal-renderings-08.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "sepolia",
@@ -185,19 +1431,141 @@ export const generatedProjects = [
       "1280": "/images/sepolia/hero-1280.webp",
       "1920": "/images/sepolia/hero-1920.webp"
     },
-    "gallery": {
-      "before": [
-        "/images/sepolia/before-01.webp",
-        "/images/sepolia/before-02.webp",
-        "/images/sepolia/before-03.webp"
-      ],
-      "after": [
-        "/images/sepolia/after-01.webp",
-        "/images/sepolia/after-02.webp",
-        "/images/sepolia/after-03.webp",
-        "/images/sepolia/after-04.webp"
-      ]
-    }
+    "galleries": [
+      {
+        "id": "drone-before",
+        "title": "Drone Before",
+        "count": 4,
+        "images": [
+          {
+            "thumb": "/images/sepolia/drone-before-01-thumb.webp",
+            "full": "/images/sepolia/drone-before-01.webp"
+          },
+          {
+            "thumb": "/images/sepolia/drone-before-02-thumb.webp",
+            "full": "/images/sepolia/drone-before-02.webp"
+          },
+          {
+            "thumb": "/images/sepolia/drone-before-03-thumb.webp",
+            "full": "/images/sepolia/drone-before-03.webp"
+          },
+          {
+            "thumb": "/images/sepolia/drone-before-04-thumb.webp",
+            "full": "/images/sepolia/drone-before-04.webp"
+          }
+        ]
+      },
+      {
+        "id": "interiors",
+        "title": "Interiors",
+        "count": 10,
+        "images": [
+          {
+            "thumb": "/images/sepolia/interiors-01-thumb.webp",
+            "full": "/images/sepolia/interiors-01.webp"
+          },
+          {
+            "thumb": "/images/sepolia/interiors-02-thumb.webp",
+            "full": "/images/sepolia/interiors-02.webp"
+          },
+          {
+            "thumb": "/images/sepolia/interiors-03-thumb.webp",
+            "full": "/images/sepolia/interiors-03.webp"
+          },
+          {
+            "thumb": "/images/sepolia/interiors-04-thumb.webp",
+            "full": "/images/sepolia/interiors-04.webp"
+          },
+          {
+            "thumb": "/images/sepolia/interiors-05-thumb.webp",
+            "full": "/images/sepolia/interiors-05.webp"
+          },
+          {
+            "thumb": "/images/sepolia/interiors-06-thumb.webp",
+            "full": "/images/sepolia/interiors-06.webp"
+          },
+          {
+            "thumb": "/images/sepolia/interiors-07-thumb.webp",
+            "full": "/images/sepolia/interiors-07.webp"
+          },
+          {
+            "thumb": "/images/sepolia/interiors-08-thumb.webp",
+            "full": "/images/sepolia/interiors-08.webp"
+          },
+          {
+            "thumb": "/images/sepolia/interiors-09-thumb.webp",
+            "full": "/images/sepolia/interiors-09.webp"
+          },
+          {
+            "thumb": "/images/sepolia/interiors-10-thumb.webp",
+            "full": "/images/sepolia/interiors-10.webp"
+          }
+        ]
+      },
+      {
+        "id": "sourena",
+        "title": "Sourena",
+        "count": 14,
+        "images": [
+          {
+            "thumb": "/images/sepolia/sourena-01-thumb.webp",
+            "full": "/images/sepolia/sourena-01.webp"
+          },
+          {
+            "thumb": "/images/sepolia/sourena-02-thumb.webp",
+            "full": "/images/sepolia/sourena-02.webp"
+          },
+          {
+            "thumb": "/images/sepolia/sourena-03-thumb.webp",
+            "full": "/images/sepolia/sourena-03.webp"
+          },
+          {
+            "thumb": "/images/sepolia/sourena-04-thumb.webp",
+            "full": "/images/sepolia/sourena-04.webp"
+          },
+          {
+            "thumb": "/images/sepolia/sourena-05-thumb.webp",
+            "full": "/images/sepolia/sourena-05.webp"
+          },
+          {
+            "thumb": "/images/sepolia/sourena-06-thumb.webp",
+            "full": "/images/sepolia/sourena-06.webp"
+          },
+          {
+            "thumb": "/images/sepolia/sourena-07-thumb.webp",
+            "full": "/images/sepolia/sourena-07.webp"
+          },
+          {
+            "thumb": "/images/sepolia/sourena-08-thumb.webp",
+            "full": "/images/sepolia/sourena-08.webp"
+          },
+          {
+            "thumb": "/images/sepolia/sourena-09-thumb.webp",
+            "full": "/images/sepolia/sourena-09.webp"
+          },
+          {
+            "thumb": "/images/sepolia/sourena-10-thumb.webp",
+            "full": "/images/sepolia/sourena-10.webp"
+          },
+          {
+            "thumb": "/images/sepolia/sourena-11-thumb.webp",
+            "full": "/images/sepolia/sourena-11.webp"
+          },
+          {
+            "thumb": "/images/sepolia/sourena-12-thumb.webp",
+            "full": "/images/sepolia/sourena-12.webp"
+          },
+          {
+            "thumb": "/images/sepolia/sourena-13-thumb.webp",
+            "full": "/images/sepolia/sourena-13.webp"
+          },
+          {
+            "thumb": "/images/sepolia/sourena-14-thumb.webp",
+            "full": "/images/sepolia/sourena-14.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "serifou",
@@ -207,25 +1575,140 @@ export const generatedProjects = [
       "1280": "/images/serifou/hero-1280.webp",
       "1920": "/images/serifou/hero-1920.webp"
     },
-    "gallery": {
-      "before": [
-        "/images/serifou/before-01.webp",
-        "/images/serifou/before-02.webp",
-        "/images/serifou/before-03.webp"
-      ],
-      "after": [
-        "/images/serifou/after-01.webp",
-        "/images/serifou/after-02.webp",
-        "/images/serifou/after-03.webp",
-        "/images/serifou/after-04.webp"
-      ],
-      "renderings": [
-        "/images/serifou/renderings-01.webp",
-        "/images/serifou/renderings-02.webp",
-        "/images/serifou/renderings-03.webp",
-        "/images/serifou/renderings-04.webp"
-      ]
-    }
+    "galleries": [
+      {
+        "id": "exteriors",
+        "title": "Exteriors",
+        "count": 9,
+        "images": [
+          {
+            "thumb": "/images/serifou/exteriors-01-thumb.webp",
+            "full": "/images/serifou/exteriors-01.webp"
+          },
+          {
+            "thumb": "/images/serifou/exteriors-02-thumb.webp",
+            "full": "/images/serifou/exteriors-02.webp"
+          },
+          {
+            "thumb": "/images/serifou/exteriors-03-thumb.webp",
+            "full": "/images/serifou/exteriors-03.webp"
+          },
+          {
+            "thumb": "/images/serifou/exteriors-04-thumb.webp",
+            "full": "/images/serifou/exteriors-04.webp"
+          },
+          {
+            "thumb": "/images/serifou/exteriors-05-thumb.webp",
+            "full": "/images/serifou/exteriors-05.webp"
+          },
+          {
+            "thumb": "/images/serifou/exteriors-06-thumb.webp",
+            "full": "/images/serifou/exteriors-06.webp"
+          },
+          {
+            "thumb": "/images/serifou/exteriors-07-thumb.webp",
+            "full": "/images/serifou/exteriors-07.webp"
+          },
+          {
+            "thumb": "/images/serifou/exteriors-08-thumb.webp",
+            "full": "/images/serifou/exteriors-08.webp"
+          },
+          {
+            "thumb": "/images/serifou/exteriors-09-thumb.webp",
+            "full": "/images/serifou/exteriors-09.webp"
+          }
+        ]
+      },
+      {
+        "id": "drone-before",
+        "title": "Drone Before",
+        "count": 3,
+        "images": [
+          {
+            "thumb": "/images/serifou/drone-before-01-thumb.webp",
+            "full": "/images/serifou/drone-before-01.webp"
+          },
+          {
+            "thumb": "/images/serifou/drone-before-02-thumb.webp",
+            "full": "/images/serifou/drone-before-02.webp"
+          },
+          {
+            "thumb": "/images/serifou/drone-before-03-thumb.webp",
+            "full": "/images/serifou/drone-before-03.webp"
+          }
+        ]
+      },
+      {
+        "id": "placements",
+        "title": "Placements",
+        "count": 4,
+        "images": [
+          {
+            "thumb": "/images/serifou/placements-01-thumb.webp",
+            "full": "/images/serifou/placements-01.webp"
+          },
+          {
+            "thumb": "/images/serifou/placements-02-thumb.webp",
+            "full": "/images/serifou/placements-02.webp"
+          },
+          {
+            "thumb": "/images/serifou/placements-03-thumb.webp",
+            "full": "/images/serifou/placements-03.webp"
+          },
+          {
+            "thumb": "/images/serifou/placements-04-thumb.webp",
+            "full": "/images/serifou/placements-04.webp"
+          }
+        ]
+      },
+      {
+        "id": "interiors",
+        "title": "Interiors",
+        "count": 10,
+        "images": [
+          {
+            "thumb": "/images/serifou/interiors-01-thumb.webp",
+            "full": "/images/serifou/interiors-01.webp"
+          },
+          {
+            "thumb": "/images/serifou/interiors-02-thumb.webp",
+            "full": "/images/serifou/interiors-02.webp"
+          },
+          {
+            "thumb": "/images/serifou/interiors-03-thumb.webp",
+            "full": "/images/serifou/interiors-03.webp"
+          },
+          {
+            "thumb": "/images/serifou/interiors-04-thumb.webp",
+            "full": "/images/serifou/interiors-04.webp"
+          },
+          {
+            "thumb": "/images/serifou/interiors-05-thumb.webp",
+            "full": "/images/serifou/interiors-05.webp"
+          },
+          {
+            "thumb": "/images/serifou/interiors-06-thumb.webp",
+            "full": "/images/serifou/interiors-06.webp"
+          },
+          {
+            "thumb": "/images/serifou/interiors-07-thumb.webp",
+            "full": "/images/serifou/interiors-07.webp"
+          },
+          {
+            "thumb": "/images/serifou/interiors-08-thumb.webp",
+            "full": "/images/serifou/interiors-08.webp"
+          },
+          {
+            "thumb": "/images/serifou/interiors-09-thumb.webp",
+            "full": "/images/serifou/interiors-09.webp"
+          },
+          {
+            "thumb": "/images/serifou/interiors-10-thumb.webp",
+            "full": "/images/serifou/interiors-10.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "thermopilon",
@@ -235,19 +1718,137 @@ export const generatedProjects = [
       "1280": "/images/thermopilon/hero-1280.webp",
       "1920": "/images/thermopilon/hero-1920.webp"
     },
-    "gallery": {
-      "before": [
-        "/images/thermopilon/before-01.webp",
-        "/images/thermopilon/before-02.webp",
-        "/images/thermopilon/before-03.webp"
-      ],
-      "after": [
-        "/images/thermopilon/after-01.webp",
-        "/images/thermopilon/after-02.webp",
-        "/images/thermopilon/after-03.webp",
-        "/images/thermopilon/after-04.webp"
-      ]
-    }
+    "galleries": [
+      {
+        "id": "drone-after",
+        "title": "Drone After",
+        "count": 6,
+        "images": [
+          {
+            "thumb": "/images/thermopilon/drone-after-01-thumb.webp",
+            "full": "/images/thermopilon/drone-after-01.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/drone-after-02-thumb.webp",
+            "full": "/images/thermopilon/drone-after-02.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/drone-after-03-thumb.webp",
+            "full": "/images/thermopilon/drone-after-03.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/drone-after-04-thumb.webp",
+            "full": "/images/thermopilon/drone-after-04.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/drone-after-05-thumb.webp",
+            "full": "/images/thermopilon/drone-after-05.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/drone-after-06-thumb.webp",
+            "full": "/images/thermopilon/drone-after-06.webp"
+          }
+        ]
+      },
+      {
+        "id": "ready-apartments",
+        "title": "Ready Apartments",
+        "count": 18,
+        "images": [
+          {
+            "thumb": "/images/thermopilon/ready-apartments-01-thumb.webp",
+            "full": "/images/thermopilon/ready-apartments-01.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/ready-apartments-02-thumb.webp",
+            "full": "/images/thermopilon/ready-apartments-02.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/ready-apartments-03-thumb.webp",
+            "full": "/images/thermopilon/ready-apartments-03.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/ready-apartments-04-thumb.webp",
+            "full": "/images/thermopilon/ready-apartments-04.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/ready-apartments-05-thumb.webp",
+            "full": "/images/thermopilon/ready-apartments-05.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/ready-apartments-06-thumb.webp",
+            "full": "/images/thermopilon/ready-apartments-06.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/ready-apartments-07-thumb.webp",
+            "full": "/images/thermopilon/ready-apartments-07.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/ready-apartments-08-thumb.webp",
+            "full": "/images/thermopilon/ready-apartments-08.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/ready-apartments-09-thumb.webp",
+            "full": "/images/thermopilon/ready-apartments-09.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/ready-apartments-10-thumb.webp",
+            "full": "/images/thermopilon/ready-apartments-10.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/ready-apartments-11-thumb.webp",
+            "full": "/images/thermopilon/ready-apartments-11.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/ready-apartments-12-thumb.webp",
+            "full": "/images/thermopilon/ready-apartments-12.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/ready-apartments-13-thumb.webp",
+            "full": "/images/thermopilon/ready-apartments-13.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/ready-apartments-14-thumb.webp",
+            "full": "/images/thermopilon/ready-apartments-14.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/ready-apartments-15-thumb.webp",
+            "full": "/images/thermopilon/ready-apartments-15.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/ready-apartments-16-thumb.webp",
+            "full": "/images/thermopilon/ready-apartments-16.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/ready-apartments-17-thumb.webp",
+            "full": "/images/thermopilon/ready-apartments-17.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/ready-apartments-18-thumb.webp",
+            "full": "/images/thermopilon/ready-apartments-18.webp"
+          }
+        ]
+      },
+      {
+        "id": "before",
+        "title": "Before",
+        "count": 3,
+        "images": [
+          {
+            "thumb": "/images/thermopilon/before-01-thumb.webp",
+            "full": "/images/thermopilon/before-01.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/before-02-thumb.webp",
+            "full": "/images/thermopilon/before-02.webp"
+          },
+          {
+            "thumb": "/images/thermopilon/before-03-thumb.webp",
+            "full": "/images/thermopilon/before-03.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "volou",
@@ -257,26 +1858,207 @@ export const generatedProjects = [
       "1280": "/images/volou/hero-1280.webp",
       "1920": "/images/volou/hero-1920.webp"
     },
-    "gallery": {
-      "before": [
-        "/images/volou/before-01.webp",
-        "/images/volou/before-02.webp",
-        "/images/volou/before-03.webp",
-        "/images/volou/before-04.webp"
-      ],
-      "during": [
-        "/images/volou/during-01.webp",
-        "/images/volou/during-02.webp",
-        "/images/volou/during-03.webp",
-        "/images/volou/during-04.webp"
-      ],
-      "renderings": [
-        "/images/volou/renderings-01.webp",
-        "/images/volou/renderings-02.webp",
-        "/images/volou/renderings-03.webp",
-        "/images/volou/renderings-04.webp"
-      ]
-    }
+    "galleries": [
+      {
+        "id": "exterior-renderings",
+        "title": "Exterior Renderings",
+        "count": 7,
+        "images": [
+          {
+            "thumb": "/images/volou/exterior-renderings-01-thumb.webp",
+            "full": "/images/volou/exterior-renderings-01.webp"
+          },
+          {
+            "thumb": "/images/volou/exterior-renderings-02-thumb.webp",
+            "full": "/images/volou/exterior-renderings-02.webp"
+          },
+          {
+            "thumb": "/images/volou/exterior-renderings-03-thumb.webp",
+            "full": "/images/volou/exterior-renderings-03.webp"
+          },
+          {
+            "thumb": "/images/volou/exterior-renderings-04-thumb.webp",
+            "full": "/images/volou/exterior-renderings-04.webp"
+          },
+          {
+            "thumb": "/images/volou/exterior-renderings-05-thumb.webp",
+            "full": "/images/volou/exterior-renderings-05.webp"
+          },
+          {
+            "thumb": "/images/volou/exterior-renderings-06-thumb.webp",
+            "full": "/images/volou/exterior-renderings-06.webp"
+          },
+          {
+            "thumb": "/images/volou/exterior-renderings-07-thumb.webp",
+            "full": "/images/volou/exterior-renderings-07.webp"
+          }
+        ]
+      },
+      {
+        "id": "drone-before",
+        "title": "Drone Before",
+        "count": 4,
+        "images": [
+          {
+            "thumb": "/images/volou/drone-before-01-thumb.webp",
+            "full": "/images/volou/drone-before-01.webp"
+          },
+          {
+            "thumb": "/images/volou/drone-before-02-thumb.webp",
+            "full": "/images/volou/drone-before-02.webp"
+          },
+          {
+            "thumb": "/images/volou/drone-before-03-thumb.webp",
+            "full": "/images/volou/drone-before-03.webp"
+          },
+          {
+            "thumb": "/images/volou/drone-before-04-thumb.webp",
+            "full": "/images/volou/drone-before-04.webp"
+          }
+        ]
+      },
+      {
+        "id": "interior-renderings",
+        "title": "Interior Renderings",
+        "count": 8,
+        "images": [
+          {
+            "thumb": "/images/volou/interior-renderings-01-thumb.webp",
+            "full": "/images/volou/interior-renderings-01.webp"
+          },
+          {
+            "thumb": "/images/volou/interior-renderings-02-thumb.webp",
+            "full": "/images/volou/interior-renderings-02.webp"
+          },
+          {
+            "thumb": "/images/volou/interior-renderings-03-thumb.webp",
+            "full": "/images/volou/interior-renderings-03.webp"
+          },
+          {
+            "thumb": "/images/volou/interior-renderings-04-thumb.webp",
+            "full": "/images/volou/interior-renderings-04.webp"
+          },
+          {
+            "thumb": "/images/volou/interior-renderings-05-thumb.webp",
+            "full": "/images/volou/interior-renderings-05.webp"
+          },
+          {
+            "thumb": "/images/volou/interior-renderings-06-thumb.webp",
+            "full": "/images/volou/interior-renderings-06.webp"
+          },
+          {
+            "thumb": "/images/volou/interior-renderings-07-thumb.webp",
+            "full": "/images/volou/interior-renderings-07.webp"
+          },
+          {
+            "thumb": "/images/volou/interior-renderings-08-thumb.webp",
+            "full": "/images/volou/interior-renderings-08.webp"
+          }
+        ]
+      },
+      {
+        "id": "renovations",
+        "title": "Renovations",
+        "count": 14,
+        "images": [
+          {
+            "thumb": "/images/volou/renovations-01-thumb.webp",
+            "full": "/images/volou/renovations-01.webp"
+          },
+          {
+            "thumb": "/images/volou/renovations-02-thumb.webp",
+            "full": "/images/volou/renovations-02.webp"
+          },
+          {
+            "thumb": "/images/volou/renovations-03-thumb.webp",
+            "full": "/images/volou/renovations-03.webp"
+          },
+          {
+            "thumb": "/images/volou/renovations-04-thumb.webp",
+            "full": "/images/volou/renovations-04.webp"
+          },
+          {
+            "thumb": "/images/volou/renovations-05-thumb.webp",
+            "full": "/images/volou/renovations-05.webp"
+          },
+          {
+            "thumb": "/images/volou/renovations-06-thumb.webp",
+            "full": "/images/volou/renovations-06.webp"
+          },
+          {
+            "thumb": "/images/volou/renovations-07-thumb.webp",
+            "full": "/images/volou/renovations-07.webp"
+          },
+          {
+            "thumb": "/images/volou/renovations-08-thumb.webp",
+            "full": "/images/volou/renovations-08.webp"
+          },
+          {
+            "thumb": "/images/volou/renovations-09-thumb.webp",
+            "full": "/images/volou/renovations-09.webp"
+          },
+          {
+            "thumb": "/images/volou/renovations-10-thumb.webp",
+            "full": "/images/volou/renovations-10.webp"
+          },
+          {
+            "thumb": "/images/volou/renovations-11-thumb.webp",
+            "full": "/images/volou/renovations-11.webp"
+          },
+          {
+            "thumb": "/images/volou/renovations-12-thumb.webp",
+            "full": "/images/volou/renovations-12.webp"
+          },
+          {
+            "thumb": "/images/volou/renovations-13-thumb.webp",
+            "full": "/images/volou/renovations-13.webp"
+          },
+          {
+            "thumb": "/images/volou/renovations-14-thumb.webp",
+            "full": "/images/volou/renovations-14.webp"
+          }
+        ]
+      },
+      {
+        "id": "before",
+        "title": "Before",
+        "count": 8,
+        "images": [
+          {
+            "thumb": "/images/volou/before-01-thumb.webp",
+            "full": "/images/volou/before-01.webp"
+          },
+          {
+            "thumb": "/images/volou/before-02-thumb.webp",
+            "full": "/images/volou/before-02.webp"
+          },
+          {
+            "thumb": "/images/volou/before-03-thumb.webp",
+            "full": "/images/volou/before-03.webp"
+          },
+          {
+            "thumb": "/images/volou/before-04-thumb.webp",
+            "full": "/images/volou/before-04.webp"
+          },
+          {
+            "thumb": "/images/volou/before-05-thumb.webp",
+            "full": "/images/volou/before-05.webp"
+          },
+          {
+            "thumb": "/images/volou/before-06-thumb.webp",
+            "full": "/images/volou/before-06.webp"
+          },
+          {
+            "thumb": "/images/volou/before-07-thumb.webp",
+            "full": "/images/volou/before-07.webp"
+          },
+          {
+            "thumb": "/images/volou/before-08-thumb.webp",
+            "full": "/images/volou/before-08.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "vyronas2",
@@ -286,14 +2068,138 @@ export const generatedProjects = [
       "1280": "/images/vyronas2/hero-1280.webp",
       "1920": "/images/vyronas2/hero-1920.webp"
     },
-    "gallery": {
-      "renderings": [
-        "/images/vyronas2/renderings-01.webp",
-        "/images/vyronas2/renderings-02.webp",
-        "/images/vyronas2/renderings-03.webp",
-        "/images/vyronas2/renderings-04.webp"
-      ]
-    }
+    "galleries": [
+      {
+        "id": "interior-renderings",
+        "title": "Interior Renderings",
+        "count": 7,
+        "images": [
+          {
+            "thumb": "/images/vyronas2/interior-renderings-01-thumb.webp",
+            "full": "/images/vyronas2/interior-renderings-01.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/interior-renderings-02-thumb.webp",
+            "full": "/images/vyronas2/interior-renderings-02.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/interior-renderings-03-thumb.webp",
+            "full": "/images/vyronas2/interior-renderings-03.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/interior-renderings-04-thumb.webp",
+            "full": "/images/vyronas2/interior-renderings-04.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/interior-renderings-05-thumb.webp",
+            "full": "/images/vyronas2/interior-renderings-05.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/interior-renderings-06-thumb.webp",
+            "full": "/images/vyronas2/interior-renderings-06.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/interior-renderings-07-thumb.webp",
+            "full": "/images/vyronas2/interior-renderings-07.webp"
+          }
+        ]
+      },
+      {
+        "id": "exterior-renderings",
+        "title": "Exterior Renderings",
+        "count": 22,
+        "images": [
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-01-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-01.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-02-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-02.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-03-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-03.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-04-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-04.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-05-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-05.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-06-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-06.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-07-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-07.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-08-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-08.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-09-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-09.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-10-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-10.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-11-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-11.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-12-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-12.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-13-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-13.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-14-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-14.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-15-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-15.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-16-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-16.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-17-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-17.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-18-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-18.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-19-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-19.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-20-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-20.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-21-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-21.webp"
+          },
+          {
+            "thumb": "/images/vyronas2/exterior-renderings-22-thumb.webp",
+            "full": "/images/vyronas2/exterior-renderings-22.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "zografou",
@@ -303,19 +2209,202 @@ export const generatedProjects = [
       "1280": "/images/zografou/hero-1280.webp",
       "1920": "/images/zografou/hero-1920.webp"
     },
-    "gallery": {
-      "after": [
-        "/images/zografou/after-01.webp",
-        "/images/zografou/after-02.webp",
-        "/images/zografou/after-03.webp",
-        "/images/zografou/after-04.webp"
-      ],
-      "drone": [
-        "/images/zografou/drone-01.webp",
-        "/images/zografou/drone-02.webp",
-        "/images/zografou/drone-03.webp",
-        "/images/zografou/drone-04.webp"
-      ]
-    }
+    "galleries": [
+      {
+        "id": "after",
+        "title": "After",
+        "count": 15,
+        "images": [
+          {
+            "thumb": "/images/zografou/after-01-thumb.webp",
+            "full": "/images/zografou/after-01.webp"
+          },
+          {
+            "thumb": "/images/zografou/after-02-thumb.webp",
+            "full": "/images/zografou/after-02.webp"
+          },
+          {
+            "thumb": "/images/zografou/after-03-thumb.webp",
+            "full": "/images/zografou/after-03.webp"
+          },
+          {
+            "thumb": "/images/zografou/after-04-thumb.webp",
+            "full": "/images/zografou/after-04.webp"
+          },
+          {
+            "thumb": "/images/zografou/after-05-thumb.webp",
+            "full": "/images/zografou/after-05.webp"
+          },
+          {
+            "thumb": "/images/zografou/after-06-thumb.webp",
+            "full": "/images/zografou/after-06.webp"
+          },
+          {
+            "thumb": "/images/zografou/after-07-thumb.webp",
+            "full": "/images/zografou/after-07.webp"
+          },
+          {
+            "thumb": "/images/zografou/after-08-thumb.webp",
+            "full": "/images/zografou/after-08.webp"
+          },
+          {
+            "thumb": "/images/zografou/after-09-thumb.webp",
+            "full": "/images/zografou/after-09.webp"
+          },
+          {
+            "thumb": "/images/zografou/after-10-thumb.webp",
+            "full": "/images/zografou/after-10.webp"
+          },
+          {
+            "thumb": "/images/zografou/after-11-thumb.webp",
+            "full": "/images/zografou/after-11.webp"
+          },
+          {
+            "thumb": "/images/zografou/after-12-thumb.webp",
+            "full": "/images/zografou/after-12.webp"
+          },
+          {
+            "thumb": "/images/zografou/after-13-thumb.webp",
+            "full": "/images/zografou/after-13.webp"
+          },
+          {
+            "thumb": "/images/zografou/after-14-thumb.webp",
+            "full": "/images/zografou/after-14.webp"
+          },
+          {
+            "thumb": "/images/zografou/after-15-thumb.webp",
+            "full": "/images/zografou/after-15.webp"
+          }
+        ]
+      },
+      {
+        "id": "exterior",
+        "title": "Exterior",
+        "count": 7,
+        "images": [
+          {
+            "thumb": "/images/zografou/exterior-01-thumb.webp",
+            "full": "/images/zografou/exterior-01.webp"
+          },
+          {
+            "thumb": "/images/zografou/exterior-02-thumb.webp",
+            "full": "/images/zografou/exterior-02.webp"
+          },
+          {
+            "thumb": "/images/zografou/exterior-03-thumb.webp",
+            "full": "/images/zografou/exterior-03.webp"
+          },
+          {
+            "thumb": "/images/zografou/exterior-04-thumb.webp",
+            "full": "/images/zografou/exterior-04.webp"
+          },
+          {
+            "thumb": "/images/zografou/exterior-05-thumb.webp",
+            "full": "/images/zografou/exterior-05.webp"
+          },
+          {
+            "thumb": "/images/zografou/exterior-06-thumb.webp",
+            "full": "/images/zografou/exterior-06.webp"
+          },
+          {
+            "thumb": "/images/zografou/exterior-07-thumb.webp",
+            "full": "/images/zografou/exterior-07.webp"
+          }
+        ]
+      },
+      {
+        "id": "drone",
+        "title": "Drone",
+        "count": 4,
+        "images": [
+          {
+            "thumb": "/images/zografou/drone-01-thumb.webp",
+            "full": "/images/zografou/drone-01.webp"
+          },
+          {
+            "thumb": "/images/zografou/drone-02-thumb.webp",
+            "full": "/images/zografou/drone-02.webp"
+          },
+          {
+            "thumb": "/images/zografou/drone-03-thumb.webp",
+            "full": "/images/zografou/drone-03.webp"
+          },
+          {
+            "thumb": "/images/zografou/drone-04-thumb.webp",
+            "full": "/images/zografou/drone-04.webp"
+          }
+        ]
+      },
+      {
+        "id": "gym",
+        "title": "Gym",
+        "count": 4,
+        "images": [
+          {
+            "thumb": "/images/zografou/gym-01-thumb.webp",
+            "full": "/images/zografou/gym-01.webp"
+          },
+          {
+            "thumb": "/images/zografou/gym-02-thumb.webp",
+            "full": "/images/zografou/gym-02.webp"
+          },
+          {
+            "thumb": "/images/zografou/gym-03-thumb.webp",
+            "full": "/images/zografou/gym-03.webp"
+          },
+          {
+            "thumb": "/images/zografou/gym-04-thumb.webp",
+            "full": "/images/zografou/gym-04.webp"
+          }
+        ]
+      },
+      {
+        "id": "renders-zografou",
+        "title": "Renders_zografou",
+        "count": 10,
+        "images": [
+          {
+            "thumb": "/images/zografou/renders-zografou-01-thumb.webp",
+            "full": "/images/zografou/renders-zografou-01.webp"
+          },
+          {
+            "thumb": "/images/zografou/renders-zografou-02-thumb.webp",
+            "full": "/images/zografou/renders-zografou-02.webp"
+          },
+          {
+            "thumb": "/images/zografou/renders-zografou-03-thumb.webp",
+            "full": "/images/zografou/renders-zografou-03.webp"
+          },
+          {
+            "thumb": "/images/zografou/renders-zografou-04-thumb.webp",
+            "full": "/images/zografou/renders-zografou-04.webp"
+          },
+          {
+            "thumb": "/images/zografou/renders-zografou-05-thumb.webp",
+            "full": "/images/zografou/renders-zografou-05.webp"
+          },
+          {
+            "thumb": "/images/zografou/renders-zografou-06-thumb.webp",
+            "full": "/images/zografou/renders-zografou-06.webp"
+          },
+          {
+            "thumb": "/images/zografou/renders-zografou-07-thumb.webp",
+            "full": "/images/zografou/renders-zografou-07.webp"
+          },
+          {
+            "thumb": "/images/zografou/renders-zografou-08-thumb.webp",
+            "full": "/images/zografou/renders-zografou-08.webp"
+          },
+          {
+            "thumb": "/images/zografou/renders-zografou-09-thumb.webp",
+            "full": "/images/zografou/renders-zografou-09.webp"
+          },
+          {
+            "thumb": "/images/zografou/renders-zografou-10-thumb.webp",
+            "full": "/images/zografou/renders-zografou-10.webp"
+          }
+        ]
+      }
+    ]
   }
 ];

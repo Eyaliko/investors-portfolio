@@ -1,28 +1,22 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
-const PHASE_LABELS = {
-  before:     'לפני',
-  during:     'במהלך העבודות',
-  after:      'אחרי',
-  renderings: 'הדמיות',
-  drone:      'צילומי רחפן',
-};
+// initialPhaseHint: substring to match against gallery titles (e.g. "before")
+export default function Lightbox({ project, initialPhaseHint = null, onClose }) {
+  const galleries = project?.galleries || [];
 
-const PHASE_ORDER = ['before', 'during', 'after', 'renderings', 'drone'];
+  const initialIdx = useMemo(() => {
+    if (!initialPhaseHint) return 0;
+    const idx = galleries.findIndex(g => new RegExp(initialPhaseHint, 'i').test(g.title));
+    return idx >= 0 ? idx : 0;
+  }, [galleries, initialPhaseHint]);
 
-export default function Lightbox({ project, initialPhase = null, onClose }) {
-  const availablePhases = useMemo(
-    () => PHASE_ORDER.filter(p => project?.gallery?.[p]?.length),
-    [project]
-  );
-
-  const [activePhase, setActivePhase] = useState(() => {
-    if (initialPhase && availablePhases.includes(initialPhase)) return initialPhase;
-    return availablePhases[0] ?? null;
-  });
+  const [activeIdx, setActiveIdx] = useState(initialIdx);
   const [zoomedIdx, setZoomedIdx] = useState(null);
 
-  const phaseImages = activePhase ? (project.gallery[activePhase] || []) : [];
+  useEffect(() => { setActiveIdx(initialIdx); }, [initialIdx]);
+
+  const activeGallery = galleries[activeIdx];
+  const images = activeGallery?.images || [];
 
   const handleKey = useCallback((e) => {
     if (e.key === 'Escape') {
@@ -30,12 +24,12 @@ export default function Lightbox({ project, initialPhase = null, onClose }) {
       else onClose();
     } else if (zoomedIdx !== null) {
       if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
-        setZoomedIdx(i => (i + 1) % phaseImages.length);
+        setZoomedIdx(i => (i + 1) % images.length);
       } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
-        setZoomedIdx(i => (i - 1 + phaseImages.length) % phaseImages.length);
+        setZoomedIdx(i => (i - 1 + images.length) % images.length);
       }
     }
-  }, [onClose, zoomedIdx, phaseImages.length]);
+  }, [onClose, zoomedIdx, images.length]);
 
   useEffect(() => {
     document.addEventListener('keydown', handleKey);
@@ -49,89 +43,85 @@ export default function Lightbox({ project, initialPhase = null, onClose }) {
   if (!project) return null;
 
   return (
-    <div className="lightbox-backdrop" role="dialog" aria-modal="true" aria-label={`גלריה — ${project.name}`} dir="rtl">
-      {/* Header */}
-      <header className="flex items-center justify-between px-5 md:px-8 py-4 border-b border-white/10">
+    <div className="lightbox-backdrop" role="dialog" aria-modal="true" aria-label={`Gallery — ${project.name}`}>
+      <header className="flex items-center justify-between px-5 md:px-10 py-5 border-b border-white/10">
         <div>
-          <div className="eyebrow mb-1">{project.location}</div>
-          <h3 className="text-xl md:text-2xl font-semibold" style={{ fontFamily: 'var(--font-serif)' }}>
+          <div className="eyebrow mb-2">{project.location}</div>
+          <h3 className="text-2xl md:text-3xl font-light uppercase" style={{ fontFamily: 'var(--font-serif)', letterSpacing: '0.04em' }}>
             {project.name}
           </h3>
         </div>
         <button
           onClick={onClose}
           className="text-white/70 hover:text-white text-3xl leading-none px-3"
-          aria-label="סגור"
+          aria-label="Close"
         >×</button>
       </header>
 
-      {/* Phase tabs */}
-      <div className="flex flex-wrap gap-2 px-5 md:px-8 py-4 border-b border-white/10">
-        {availablePhases.map(p => (
+      <div className="flex flex-wrap gap-2 px-5 md:px-10 py-4 border-b border-white/10">
+        {galleries.map((g, i) => (
           <button
-            key={p}
-            onClick={() => { setActivePhase(p); setZoomedIdx(null); }}
-            className={`lightbox-tab ${p === activePhase ? 'is-active' : ''}`}
+            key={g.id}
+            onClick={() => { setActiveIdx(i); setZoomedIdx(null); }}
+            className={`lightbox-tab ${i === activeIdx ? 'is-active' : ''}`}
           >
-            {PHASE_LABELS[p]}
-            <span className="mr-2 text-white/50 text-xs">({project.gallery[p].length})</span>
+            {g.title}
+            <span className="count">({g.count})</span>
           </button>
         ))}
       </div>
 
-      {/* Thumbnail grid */}
-      <div className="flex-1 overflow-y-auto p-5 md:p-8">
+      <div className="flex-1 overflow-y-auto p-5 md:p-10">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-          {phaseImages.map((src, i) => (
+          {images.map((img, i) => (
             <button
-              key={src}
+              key={img.thumb}
               onClick={() => setZoomedIdx(i)}
-              className="group relative aspect-[4/3] overflow-hidden bg-white/5 rounded-sm"
+              className="group relative aspect-[4/3] overflow-hidden bg-white/5"
             >
               <img
-                src={src}
+                src={img.thumb}
                 alt=""
                 loading="lazy"
                 decoding="async"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 ring-1 ring-inset ring-white/10 group-hover:ring-[var(--color-gold)]/50 transition-all" />
+              <div className="absolute inset-0 ring-1 ring-inset ring-white/10 group-hover:ring-[var(--color-gold)]/55 transition-all" />
             </button>
           ))}
         </div>
-        {phaseImages.length === 0 && (
-          <div className="text-white/50 text-center py-12">אין תמונות בקטגוריה זו</div>
+        {images.length === 0 && (
+          <div className="text-white/50 text-center py-12">No images in this category</div>
         )}
       </div>
 
-      {/* Zoom overlay */}
-      {zoomedIdx !== null && phaseImages[zoomedIdx] && (
+      {zoomedIdx !== null && images[zoomedIdx] && (
         <div
           className="fixed inset-0 bg-black/95 z-[60] flex items-center justify-center"
           onClick={() => setZoomedIdx(null)}
         >
           <img
-            src={phaseImages[zoomedIdx]}
+            src={images[zoomedIdx].full}
             alt=""
             className="max-w-[95vw] max-h-[92vh] object-contain"
           />
           <button
             onClick={(e) => { e.stopPropagation(); setZoomedIdx(null); }}
             className="absolute top-5 right-5 text-white/80 hover:text-white text-4xl leading-none"
-            aria-label="סגור"
+            aria-label="Close"
           >×</button>
           <button
-            onClick={(e) => { e.stopPropagation(); setZoomedIdx(i => (i - 1 + phaseImages.length) % phaseImages.length); }}
-            className="absolute right-5 top-1/2 -translate-y-1/2 text-white/60 hover:text-white text-3xl p-3"
-            aria-label="הקודם"
-          >→</button>
-          <button
-            onClick={(e) => { e.stopPropagation(); setZoomedIdx(i => (i + 1) % phaseImages.length); }}
+            onClick={(e) => { e.stopPropagation(); setZoomedIdx(i => (i - 1 + images.length) % images.length); }}
             className="absolute left-5 top-1/2 -translate-y-1/2 text-white/60 hover:text-white text-3xl p-3"
-            aria-label="הבא"
-          >←</button>
-          <div className="absolute bottom-5 left-1/2 -translate-x-1/2 text-white/60 text-sm">
-            {zoomedIdx + 1} / {phaseImages.length}
+            aria-label="Previous"
+          >‹</button>
+          <button
+            onClick={(e) => { e.stopPropagation(); setZoomedIdx(i => (i + 1) % images.length); }}
+            className="absolute right-5 top-1/2 -translate-y-1/2 text-white/60 hover:text-white text-3xl p-3"
+            aria-label="Next"
+          >›</button>
+          <div className="absolute bottom-5 left-1/2 -translate-x-1/2 text-white/60 text-sm tracking-wider">
+            {zoomedIdx + 1} / {images.length}
           </div>
         </div>
       )}

@@ -3,24 +3,23 @@ import { PROJECTS } from './data/projects.js';
 import { useActiveSlide } from './hooks/useActiveSlide.js';
 import IntroHero from './components/IntroHero.jsx';
 import ProjectSlide from './components/ProjectSlide.jsx';
-import ClosingSlide from './components/ClosingSlide.jsx';
 import ScrollProgress from './components/ScrollProgress.jsx';
 import Lightbox from './components/Lightbox.jsx';
 
 export default function App() {
   const reelRef = useRef(null);
   const activeIdx = useActiveSlide(reelRef);
-  const totalSlides = PROJECTS.length + 2; // intro + projects + closing
+  const totalSlides = PROJECTS.length + 1; // intro + projects
 
-  const [lightbox, setLightbox] = useState(null); // { project, initialPhase }
+  const [lightbox, setLightbox] = useState(null);
 
   const jumpTo = useCallback((idx) => {
     const slides = reelRef.current?.querySelectorAll('.slide');
     if (slides && slides[idx]) slides[idx].scrollIntoView({ behavior: 'smooth', block: 'start' });
   }, []);
 
-  const openGallery = useCallback((project, initialPhase = null) => {
-    setLightbox({ project, initialPhase });
+  const openGallery = useCallback((project, initialPhaseHint = null) => {
+    setLightbox({ project, initialPhaseHint });
   }, []);
   const closeGallery = useCallback(() => setLightbox(null), []);
 
@@ -34,19 +33,16 @@ export default function App() {
           <ProjectSlide
             key={p.slug}
             project={p}
-            index={i}
-            total={PROJECTS.length}
             onOpenGallery={openGallery}
             eager={i === 0}
           />
         ))}
-        <ClosingSlide onBackToTop={() => jumpTo(0)} />
       </main>
 
       {lightbox && (
         <Lightbox
           project={lightbox.project}
-          initialPhase={lightbox.initialPhase}
+          initialPhaseHint={lightbox.initialPhaseHint}
           onClose={closeGallery}
         />
       )}

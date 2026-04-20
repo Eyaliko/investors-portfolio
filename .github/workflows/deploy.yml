@@ -43,7 +43,7 @@ jobs:
         run: |
           echo "==> Sync built assets"
           rsync -avz --delete \
-            dist/ "${DEPLOY_USER}@${DEPLOY_HOST}:/var/www/investors/dist/"
+            dist/ "${DEPLOY_USER}@${DEPLOY_HOST}:/var/www/portfolio/dist/"
 
           echo "==> Fix ownership"
-          ssh "${DEPLOY_USER}@${DEPLOY_HOST}" 'chown -R www-data:www-data /var/www/investors'
+          ssh "${DEPLOY_USER}@${DEPLOY_HOST}" 'chown -R www-data:www-data /var/www/portfolio'
