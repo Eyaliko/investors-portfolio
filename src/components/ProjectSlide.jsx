@@ -22,7 +22,7 @@ export default function ProjectSlide({ project, onOpenGallery, eager = false }) 
         <div className="slide-overlay" />
       </div>
 
-      <div className="relative h-full w-full flex items-end md:items-center">
+      <div className="slide-content-layer flex items-end md:items-center">
         <div className="w-full max-w-7xl mx-auto px-6 md:px-12 pb-16 md:pb-20">
           <div ref={revealRef} className="reveal reveal-up details-card">
             <div className="flex items-center gap-2 mb-4 flex-wrap">

@@ -64,6 +64,19 @@
 }
 .slide.is-active .slide-media { opacity: 1; }
 .slide.is-near   .slide-media { opacity: 0.28; }
+
+/* Foreground content (cards, text) cross-fades too — prevents the details
+   card from the incoming slide covering the previous slide's photo during transition. */
+.slide-content-layer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 500ms cubic-bezier(.25,.46,.45,.94);
+  will-change: opacity;
+}
+.slide.is-active .slide-content-layer { opacity: 1; }
+.slide.is-near   .slide-content-layer { opacity: 0.05; }
 .slide-media img {
   width: 100%; height: 100%;
   object-fit: cover;

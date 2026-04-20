@@ -20,7 +20,7 @@ export default function IntroHero({ backgroundHero }) {
         )}
         <div className="slide-overlay" style={{ background: 'linear-gradient(180deg, rgba(15,25,39,0.6) 0%, rgba(15,25,39,0.9) 100%)' }} />
       </div>
-      <div className="relative h-full w-full flex items-center justify-center px-6 py-10">
+      <div className="slide-content-layer flex items-center justify-center px-6 py-10">
         <div ref={textRef} className="reveal reveal-up text-center w-full max-w-6xl">
           <div className="eyebrow mb-7 mx-auto">Excellent Group</div>
           <h1 className="text-5xl md:text-7xl font-light mb-5" style={{ lineHeight: 1.05 }}>
